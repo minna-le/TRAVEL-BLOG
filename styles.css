@@ -1,3 +1,14 @@
+html,
+body {
+  height: 100%;
+  /* prevent horizontal scroll */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  /* ensure padding, borders included in width, height calculation */
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -9,25 +20,29 @@ body {
   align-items: center;
   position: absolute;
   width: 100%;
-  /* z-index: 2; */
+  /* make sure header always overlay bg image */
+  z-index: 2;
 }
 
 .logo a {
   text-decoration: none;
+
   color: black;
 }
 .logo h1 {
   font-size: 24px;
   margin-bottom: 0;
+  margin-left: 20px;
 }
 .logo p {
   margin-top: 0;
   font-size: 14px;
   text-align: center;
+  margin-left: 20px;
 }
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .navbar a {
   text-decoration: none;
@@ -36,9 +51,15 @@ body {
 .dropbtn {
   text-decoration: none;
 }
+
+.overlay-image {
+  height: 100%;
+  overflow: hidden;
+}
 .overlay-image img {
   width: 100%;
-  /* object-fit: cover; */
-  /* position: relative; */
-  /* z-index: 1; */
+  /* Background image cover all screen height */
+  height: 100vh;
+  /* ensure image cover entair container without being distorted  */
+  object-fit: cover;
 }
