@@ -43,15 +43,13 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  padding-right: 40px;
+  gap: 30px;
 }
 .navbar a {
   text-decoration: none;
   color: black;
 }
-.dropbtn {
-  text-decoration: none;
-}
-
 .overlay-image {
   height: 100%;
   overflow: hidden;
@@ -62,4 +60,37 @@ body {
   height: 100vh;
   /* ensure image cover entair container without being distorted  */
   object-fit: cover;
+}
+
+.dropbtn {
+  text-decoration: none;
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: grey;
+}
+
+.dropdown-content {
+  background-color: rgb(253, 252, 252);
+  display: none;
+  width: 100px;
+  position: absolute;
+}
+
+.dropdown-content a {
+  /* start with new line */
+  display: block;
+  color: black;
+}
+.dropdown:hover .dropdown-content {
+  /* without this, display: none for content */
+  display: block;
+  padding: 12px;
+  text-align: left;
 }
