@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  /* z-index: 2; */
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+.logo h1 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.logo p {
+  margin-top: 0;
+  font-size: 14px;
+  text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.dropbtn {
+  text-decoration: none;
+}
+.overlay-image img {
+  width: 100%;
+  /* object-fit: cover; */
+  /* position: relative; */
+  /* z-index: 1; */
+}
