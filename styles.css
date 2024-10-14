@@ -7,6 +7,7 @@ body {
   padding: 0;
   /* ensure padding, borders included in width, height calculation */
   box-sizing: border-box;
+  background-color: whitesmoke;
 }
 
 body {
@@ -93,4 +94,28 @@ body {
   display: block;
   padding: 12px;
   text-align: left;
+}
+
+.myStory-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  gap: 50px;
+  max-width: 800px;
+  margin: 0 auto; /* Center the section in the middle of the page */
+}
+
+.left-corner {
+  flex: 1; /* Allow left section to grow */
+}
+
+.profile-pic {
+  max-width: 300px;
+  border-radius: 4px;
+  height: auto;
+}
+
+.profile-pic:hover {
+  box-shadow: 0 0 2px 1px rgba(53, 55, 55, 0.5);
 }
