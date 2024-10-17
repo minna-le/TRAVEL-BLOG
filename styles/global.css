@@ -109,6 +109,7 @@ body {
   /* start with new line */
   display: block;
   color: white;
+  padding: 10px;
 }
 .dropdown:hover .dropdown-content {
   /* without this, display: none for content */
