@@ -6,6 +6,14 @@
     <title>Happy Hearts Roaming</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -17,8 +25,8 @@
           </a>
         </div>
         <div class="navbar">
-          <a href="myStory.html">MY STORY</a>
-          <a href="#blogs">BLOGS</a>
+          <div class="mystory-header"><a href="myStory.html">MY STORY</a></div>
+          <div class="blogs-header"><a href="#blogs">BLOGS</a></div>
           <div class="dropdown">
             <button class="dropbtn">
               DESTINATIONS <i class="fa fa-caret-down"></i>
@@ -28,6 +36,21 @@
               <a href="#europe">Europe</a>
               <a href="#asia">Asia</a>
             </div>
+          </div>
+          <div class="search-container">
+            <!-- form submit, data sent, handle request, page redirect/result display -->
+            <form action="/action_page.php">
+              <!-- need JS to clear input after searching? -->
+              <input
+                class="search-box"
+                type="text"
+                placeholder="Type something"
+                autocomplete="off"
+              />
+              <button class="search-btn" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -51,8 +74,8 @@
               faucibus nunc. Egestas leo turpis feugiat volutpat felis...
             </p>
           </div>
-          <a class="readmore-button" href="mystory.html">
-            <button>READ MORE</button>
+          <a href="mystory.html">
+            <button class="readmore-button">READ MORE</button>
           </a>
         </div>
         <img class="profile-pic" src="https://via.placeholder.com/300" alt="" />
