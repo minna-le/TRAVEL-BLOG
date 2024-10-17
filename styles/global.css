@@ -41,6 +41,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  justify-items: center;
   padding-right: 40px;
   gap: 30px;
 }
@@ -48,6 +49,7 @@ body {
   text-decoration: none;
   color: white;
 }
+
 .overlay-image {
   height: 100%;
   overflow: hidden;
@@ -92,4 +94,31 @@ body {
   display: block;
   padding: 12px;
   text-align: left;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.search-box {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.search-btn {
+  background-color: black; /* Match with navbar */
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.search-box:focus {
+  /* remove default OUTLINE when input field is actively selected by user (focus) */
+  /* border: none; didnot work */
+  outline: none;
+}
+.search-btn:hover {
+  cursor: pointer;
 }
