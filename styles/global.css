@@ -18,10 +18,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   width: 100%;
   background-color: black;
   position: fixed;
   height: 60px;
+}
+.logo,
+.navbar,
+.dropbtn,
+.search-box::placeholder {
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
 }
 .logo {
   height: 60px;
@@ -148,4 +156,13 @@ body {
 }
 .search-btn:hover {
   cursor: pointer;
+}
+.left-corner,
+.readmore-button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; /* Open Sans 400 for regular paragraphs */
+}
+.left-corner h1 {
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
 }
