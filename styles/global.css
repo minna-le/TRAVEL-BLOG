@@ -88,6 +88,9 @@ body {
 }
 .search-container {
   margin-left: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .overlay-image {
   height: 100%;
