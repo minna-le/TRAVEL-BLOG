@@ -2,28 +2,42 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  background-color: white;
   padding: 60px 20px;
   gap: 90px;
   max-width: 800px;
   margin: 0 auto; /* Center the section in the middle of the page */
 }
 
-.left-corner {
+.left-corner,
+.profile-pic {
   flex: 1; /* Allow left section to grow */
 }
 
-.profile-pic {
+.profile-pics {
   /* max-width: 300px; */
   border-radius: 4px;
   height: auto;
 }
 
-.profile-pic:hover {
+.profile-pics:hover {
   box-shadow: 0 0 2px 1px rgba(53, 55, 55, 0.5);
+}
+.left-corner,
+.readmore-button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; /* Open Sans 400 for regular paragraphs */
+}
+.left-corner h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 .blogs-section h1,
 .blogs-section p {
   justify-content: center;
+}
+.myStory-wrapper {
+  background-color: rgb(253, 238, 240);
+  pad: 40px;
 }

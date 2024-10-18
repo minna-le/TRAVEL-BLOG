@@ -99,9 +99,11 @@ body {
 .overlay-image img {
   width: 100%;
   /* Background image cover all screen height */
-  height: 100vh;
+  height: auto;
   /* ensure image cover entair container without being distorted  */
   object-fit: cover;
+  /* prevent unwanted inline bahavior of image */
+  display: block;
 }
 
 .dropbtn {
@@ -180,13 +182,4 @@ body {
 }
 .search-btn:hover {
   cursor: pointer;
-}
-.left-corner,
-.readmore-button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400; /* Open Sans 400 for regular paragraphs */
-}
-.left-corner h1 {
-  font-family: "Hind", sans-serif;
-  font-weight: 600;
 }
