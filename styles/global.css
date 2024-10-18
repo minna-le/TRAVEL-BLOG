@@ -18,11 +18,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 100%;
   background-color: black;
   position: fixed;
   height: 60px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .logo,
 .navbar,
@@ -31,23 +37,21 @@ body {
   font-family: "Hind", sans-serif;
   font-weight: 600;
 }
-.logo {
-  height: 60px;
-}
+
 .logo a {
   text-decoration: none;
   color: white;
 }
-.logo h1 {
-  font-size: 18px;
+.logo-h1 {
+  font-size: 16px;
   margin-bottom: 0;
   margin-left: 20px;
   justify-items: center;
 }
-.logo p {
+.logo-p {
   margin-top: 0;
-  font-size: 12px;
-
+  font-size: 10px;
+  color: rgb(233, 231, 231);
   text-align: center;
   margin-left: 16px;
 }
@@ -56,7 +60,6 @@ body {
   justify-content: space-between;
   justify-items: center;
   padding-right: 40px;
-  /* height: 60px; */
 }
 
 .navbar a {
