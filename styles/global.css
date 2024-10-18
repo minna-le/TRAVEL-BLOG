@@ -83,6 +83,8 @@ body {
 
 .dropdown {
   border-right: 2px solid white;
+  /* father of dropdown-content (positioned accord to father) */
+  position: relative;
 }
 .search-container {
   margin-left: 20px;
@@ -116,9 +118,12 @@ body {
 
 .dropdown-content {
   background-color: black;
+  /* hide dropdown content by default */
   display: none;
   width: 100px;
+  /* make content appear below dropdown button */
   position: absolute;
+  top: 80%;
 }
 
 .dropdown-content a {
