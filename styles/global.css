@@ -79,11 +79,6 @@ body {
   height: 100%;
 }
 
-.dropdown {
-  /* father of dropdown-content (positioned accord to father) */
-  position: relative;
-}
-
 .overlay-image {
   height: 100%;
   overflow: hidden;
@@ -110,15 +105,21 @@ body {
 .dropdown:hover .dropbtn {
   color: grey;
 }
-
+.dropdown {
+  /* father of dropdown-content (positioned accord to father) */
+  position: relative;
+}
 .dropdown-content {
   background-color: black;
   /* hide dropdown content by default */
   display: none;
-  width: 100px;
+  width: 100%;
   /* make content appear below dropdown button */
   position: absolute;
   top: 100%;
+  left: 0;
+  /* make sure padding and border are included in total width */
+  box-sizing: border-box;
 }
 
 .dropdown-content a {
