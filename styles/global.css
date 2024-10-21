@@ -9,7 +9,6 @@ body {
   background-color: whitesmoke;
 }
 :root {
-  --main-font: "Hind", san-serif;
   --paragraph-sans: "Open Sans", sans-serif;
   --heading-sans: "Hind", san-serif;
 }
@@ -32,6 +31,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin: 20px;
+  text-align: center;
 }
 .logo,
 .navbar,
@@ -45,24 +46,18 @@ body {
   text-decoration: none;
   color: white;
 }
+
 .logo-h1 {
   font-size: 16px;
   margin-bottom: 0;
-  margin-left: 20px;
-  justify-items: center;
 }
 .logo-p {
   margin-top: 0;
   font-size: 10px;
   color: rgb(233, 231, 231);
-  text-align: center;
-  margin-left: 16px;
 }
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-items: center;
   padding-right: 40px;
   height: 100%;
 }
@@ -78,7 +73,6 @@ body {
 .search-container {
   display: flex;
   border-left: 2px solid white;
-  /* justify-content: center; */
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -86,7 +80,6 @@ body {
 }
 
 .dropdown {
-  /* border-right: 2px solid white; */
   /* father of dropdown-content (positioned accord to father) */
   position: relative;
 }
@@ -142,8 +135,8 @@ body {
 }
 .search-container {
   border-radius: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .search-box {
   background-color: black;
@@ -155,9 +148,7 @@ body {
 }
 .search-box-wrapper {
   display: flex;
-  margin-left: 10px;
   align-items: center;
-  justify-content: center;
   border: 1px solid rgb(196, 195, 195); /* Smaller white border around the search box */
   border-radius: 4px;
   padding-left: 6px;
@@ -175,7 +166,7 @@ body {
 }
 .search-box:focus {
   /* remove default OUTLINE when input field is actively selected by user (focus) */
-  /* border: none; didnot work */
+
   outline: none;
 }
 .search-btn:hover {
