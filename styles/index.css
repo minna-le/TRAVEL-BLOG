@@ -27,3 +27,12 @@
 .blogs-section p {
   justify-content: center;
 }
+.left-corner,
+.readmore-button {
+  font-family: var(--paragraph-sans);
+  font-weight: 400; /* Open Sans 400 for regular paragraphs */
+}
+.left-corner h1 {
+  font-family: var(--heading-sans);
+  font-weight: 600;
+}
