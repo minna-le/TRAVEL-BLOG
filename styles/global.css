@@ -126,7 +126,7 @@ body {
   width: 100px;
   /* make content appear below dropdown button */
   position: absolute;
-  top: 80%;
+  top: 100%;
 }
 
 .dropdown-content a {
