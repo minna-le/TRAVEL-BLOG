@@ -6,19 +6,27 @@
     <title>Happy Hearts Roaming</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="headerNav">
         <div class="logo">
           <a href="index.html">
-            <h1>Happy Hearts Roaming</h1>
-            <p>Family bonds. Across borders</p>
+            <div class="logo-h1">Happy Hearts Roaming</div>
+            <div class="logo-p">Family bonds. Across borders</div>
           </a>
         </div>
         <div class="navbar">
-          <a href="myStory.html">MY STORY</a>
-          <a href="#blogs">BLOGS</a>
+          <div class="mystory-header"><a href="myStory.html">MY STORY</a></div>
+          <div class="blogs-header"><a href="#blogs">BLOGS</a></div>
           <div class="dropdown">
             <button class="dropbtn">
               DESTINATIONS <i class="fa fa-caret-down"></i>
@@ -29,6 +37,23 @@
               <a href="#asia">Asia</a>
             </div>
           </div>
+          <div class="search-container">
+            <div class="search-box-wrapper">
+              <!-- form submit, data sent, handle request, page redirect/result display -->
+              <form action="/action_page.php">
+                <!-- need JS to clear input after searching? -->
+                <input
+                  class="search-box"
+                  type="text"
+                  placeholder="Type something"
+                  autocomplete="off"
+                />
+                <button class="search-btn" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -37,29 +62,52 @@
       <div class="overlay-image">
         <img src="images/image2.avif" />
       </div>
-      <div class="myStory-section">
-        <div class="left-corner">
-          <h1>My story</h1>
-          <div>
-            <p>
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Netus
-              habitant quam elit adipiscing tempor consectetur eget mattis.
-              Donec hac dapibus arcu auctor gravida curae vel. Commodo tellus
-              praesent eleifend feugiat curae. Quisque eget laoreet ridiculus
-              suspendisse sollicitudin aliquam magna felis. Vel laoreet potenti
-              libero finibus sodales in tristique. Velit et dignissim torquent
-              faucibus nunc. Egestas leo turpis feugiat volutpat felis...
-            </p>
+      <div class="myStory-wrapper">
+        <div class="myStory-section">
+          <div class="left-corner">
+            <h1>My story</h1>
+            <div>
+              <p>
+                Lorem ipsum odor amet, consectetuer adipiscing elit. Netus
+                habitant quam elit adipiscing tempor consectetur eget mattis.
+                Donec hac dapibus arcu auctor gravida curae vel.
+              </p>
+
+              <p>
+                Commodo tellus praesent eleifend feugiat curae. Quisque eget
+                laoreet ridiculus suspendisse sollicitudin aliquam magna felis.
+                Vel laoreet potenti libero finibus sodales in tristique.
+              </p>
+
+              <p>
+                Velit et dignissim torquent faucibus nunc. Egestas leo turpis
+                feugiat volutpat felis...
+              </p>
+            </div>
+            <a href="mystory.html">
+              <button class="readmore-button">READ MORE</button>
+            </a>
           </div>
-          <a class="readmore-button" href="mystory.html">
-            <button>READ MORE</button>
-          </a>
+          <div class="right-corner">
+            <div><img class="top-image" src="images/img4.jpg" alt="" /></div>
+            <div class="secondrow-images">
+              <img class="under-image" src="images/img5.jpg" alt="" />
+              <img class="under-image" src="images/img6.jpg" alt="" />
+              <img class="under-image" src="images/img7.jpg" alt="" />
+            </div>
+          </div>
         </div>
-        <img class="profile-pic" src="https://via.placeholder.com/300" alt="" />
       </div>
-      <div class="blogs-section">
-        <h1>LATEST FROM THE BLOG</h1>
-        <p>Our most recent city guides, iteneraries around the world</p>
+
+      <div class="blogs-wrapper">
+        <div>
+          <h1>LATEST FROM THE BLOG</h1>
+          <p>Our most recent city guides, iteneraries around the world</p>
+        </div>
+        <div></div>
+        <div>
+          <a href="blogs.html"><button></button></a>
+        </div>
       </div>
     </main>
     <footer>

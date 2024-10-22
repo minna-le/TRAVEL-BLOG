@@ -1,6 +1,5 @@
 html,
 body {
-  height: 100%;
   /* prevent horizontal scroll */
   overflow-x: hidden;
   margin: 0;
@@ -11,43 +10,87 @@ body {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+  font: Arial;
 }
+
 .headerNav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
   width: 100%;
-  /* make sure header always overlay bg image */
-  z-index: 2;
+  background-color: black;
+  position: fixed;
+  height: 60px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.logo,
+.navbar,
+.dropbtn,
+.search-box::placeholder {
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
 }
 
 .logo a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
-.logo h1 {
-  font-size: 24px;
+.logo-h1 {
+  font-size: 16px;
   margin-bottom: 0;
   margin-left: 20px;
+  justify-items: center;
 }
-.logo p {
+.logo-p {
   margin-top: 0;
-  font-size: 14px;
+  font-size: 10px;
+  color: rgb(233, 231, 231);
   text-align: center;
-  margin-left: 20px;
+  margin-left: 16px;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  justify-items: center;
   padding-right: 40px;
-  gap: 30px;
+  height: 100%;
 }
+
 .navbar a {
   text-decoration: none;
-  color: black;
+  color: white;
+}
+
+.mystory-header,
+.blogs-header,
+.dropdown {
+  display: flex;
+  border-left: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+}
+
+.dropdown {
+  border-right: 2px solid white;
+  /* father of dropdown-content (positioned accord to father) */
+  position: relative;
+}
+.search-container {
+  margin-left: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .overlay-image {
   height: 100%;
@@ -56,9 +99,11 @@ body {
 .overlay-image img {
   width: 100%;
   /* Background image cover all screen height */
-  height: 100vh;
+  height: auto;
   /* ensure image cover entair container without being distorted  */
   object-fit: cover;
+  /* prevent unwanted inline bahavior of image */
+  display: block;
 }
 
 .dropbtn {
@@ -68,6 +113,7 @@ body {
   font-size: 16px;
   padding-left: 0;
   padding-right: 0;
+  color: white;
 }
 
 .navbar a:hover,
@@ -76,20 +122,64 @@ body {
 }
 
 .dropdown-content {
-  background-color: rgb(253, 252, 252);
+  background-color: black;
+  /* hide dropdown content by default */
   display: none;
   width: 100px;
+  /* make content appear below dropdown button */
   position: absolute;
+  top: 80%;
 }
 
 .dropdown-content a {
   /* start with new line */
   display: block;
-  color: black;
+  color: white;
+  padding: 10px;
 }
 .dropdown:hover .dropdown-content {
   /* without this, display: none for content */
   display: block;
   padding: 12px;
   text-align: left;
+}
+.search-container {
+  border-radius: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.search-box {
+  background-color: black;
+  color: white;
+  height: 100%;
+  font-family: "Hind", sans-serif;
+  font-weight: 600;
+  border: none;
+}
+.search-box-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(196, 195, 195); /* Smaller white border around the search box */
+  border-radius: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  height: 30px; /* Adjust the height to be smaller than the header */
+}
+.search-btn {
+  background-color: black; /* Match with navbar */
+  border: none;
+  color: rgb(201, 196, 196);
+  cursor: pointer;
+}
+.search-box::placeholder {
+  color: rgb(201, 196, 196);
+}
+.search-box:focus {
+  /* remove default OUTLINE when input field is actively selected by user (focus) */
+  /* border: none; didnot work */
+  outline: none;
+}
+.search-btn:hover {
+  cursor: pointer;
 }
