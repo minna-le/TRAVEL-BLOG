@@ -8,10 +8,15 @@ body {
   box-sizing: border-box;
   background-color: whitesmoke;
 }
-
+html * {
+  box-sizing: border-box;
+}
+:root {
+  --paragraph-sans: "Open Sans", sans-serif;
+  --heading-sans: "Hind", san-serif;
+}
 body {
   line-height: 1.6;
-  font: Arial;
 }
 
 .headerNav {
@@ -29,12 +34,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin: 20px;
+  text-align: center;
 }
 .logo,
 .navbar,
 .dropbtn,
 .search-box::placeholder {
-  font-family: "Hind", sans-serif;
+  font-family: var(--heading-sans);
   font-weight: 600;
 }
 
@@ -42,24 +49,18 @@ body {
   text-decoration: none;
   color: white;
 }
+
 .logo-h1 {
   font-size: 16px;
   margin-bottom: 0;
-  margin-left: 20px;
-  justify-items: center;
 }
 .logo-p {
   margin-top: 0;
   font-size: 10px;
   color: rgb(233, 231, 231);
-  text-align: center;
-  margin-left: 16px;
 }
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-items: center;
   padding-right: 40px;
   height: 100%;
 }
@@ -71,27 +72,16 @@ body {
 
 .mystory-header,
 .blogs-header,
-.dropdown {
+.dropdown,
+.search-container {
   display: flex;
   border-left: 2px solid white;
-  justify-content: center;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
   height: 100%;
 }
 
-.dropdown {
-  border-right: 2px solid white;
-  /* father of dropdown-content (positioned accord to father) */
-  position: relative;
-}
-.search-container {
-  margin-left: 20px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
 .overlay-image {
   height: 100%;
   overflow: hidden;
@@ -120,17 +110,21 @@ body {
 .dropdown:hover .dropbtn {
   color: grey;
 }
-
+.dropdown {
+  /* father of dropdown-content (positioned accord to father) */
+  position: relative;
+}
 .dropdown-content {
   background-color: black;
   /* hide dropdown content by default */
   display: none;
-  width: 100px;
+  width: 100%;
   /* make content appear below dropdown button */
   position: absolute;
-  top: 80%;
+  top: 100%;
+  left: 0;
+  /* make sure padding and border are included in total width */
 }
-
 .dropdown-content a {
   /* start with new line */
   display: block;
@@ -145,21 +139,20 @@ body {
 }
 .search-container {
   border-radius: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .search-box {
   background-color: black;
   color: white;
   height: 100%;
-  font-family: "Hind", sans-serif;
+  font-family: var(--heading-sans);
   font-weight: 600;
   border: none;
 }
 .search-box-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
   border: 1px solid rgb(196, 195, 195); /* Smaller white border around the search box */
   border-radius: 4px;
   padding-left: 6px;
@@ -177,7 +170,7 @@ body {
 }
 .search-box:focus {
   /* remove default OUTLINE when input field is actively selected by user (focus) */
-  /* border: none; didnot work */
+
   outline: none;
 }
 .search-btn:hover {
