@@ -37,8 +37,8 @@
   transition: transform 0.3s;
 }
 
-.arrow-icon {
-  width: 10px;
+.button-arrow-icon {
+  width: 15px;
   fill: var(--overlaid-text-color);
   margin-left: 5px;
 }
@@ -56,7 +56,12 @@
   /* prevent unwanted inline bahavior of image */
   display: block;
 }
-
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  justify-content: flex-start;
+}
 .myStory-section {
   display: flex;
   justify-content: space-between;
@@ -64,7 +69,7 @@
   background-color: white;
   padding: 20px 48px;
   gap: 70px;
-  max-width: 1500px;
+
   margin: 0 auto; /* Center the section in the middle of the page */
 }
 
@@ -110,4 +115,84 @@
 .left-corner h1 {
   font-family: var(--heading-sans);
   font-weight: 600;
+}
+.left-corner p {
+  margin-left: 0;
+}
+.blogs-section-container {
+  padding: 30px 88px;
+  font-family: var(--paragraph-sans);
+}
+.blogs-header-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.blogs-header-container h1,
+p {
+  margin: 10px;
+}
+.blogs-header-container h1 {
+  padding: 0;
+}
+.blogs-carousel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left-button,
+.right-button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.carousel-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.arrow-icon {
+  width: 100%;
+}
+
+.banner-image {
+  width: 225px;
+  height: 155px;
+}
+.cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+.cards-container a {
+  /* center text in a block.inline element */
+  text-align: center;
+  text-decoration: none;
+}
+.cards-container a:visited {
+  color: black; /* This ensures the visited links aren't purple */
+}
+
+.card-title {
+  margin: 10px;
+}
+.view-all-button {
+  font-family: var(--paragraph-sans);
+  font-weight: 400;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
