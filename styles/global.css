@@ -83,64 +83,6 @@ body {
   padding-right: 20px;
   height: 100%;
 }
-.overlay-container {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-.overlay-text {
-  position: absolute;
-  color: rgb(234, 234, 233);
-  top: 35%;
-  left: 5%;
-  font-family: var(--paragraph-sans);
-  font-weight: lighter;
-  text-align: left;
-}
-.overlay-text p {
-  font-size: 140px;
-  margin-bottom: 50px;
-}
-
-.lets-go-button {
-  cursor: pointer;
-  border: 1px solid var(--overlaid-text-color);
-  background-color: transparent;
-  color: var(--overlaid-text-color);
-  font-family: var(--heading-sans);
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-flex;
-  font-weight: lighter;
-  padding: 10px 20px;
-  align-items: center;
-}
-.lets-go-button:hover .arrow-icon {
-  /* element moves horizontally 5px along X-axis */
-  transform: translateX(5px);
-  /* transition happens over 0.3s */
-  transition: transform 0.3s;
-}
-
-.arrow-icon {
-  width: 10px;
-  fill: var(--overlaid-text-color);
-  margin-left: 5px;
-}
-.background-image {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.background-image img {
-  width: 100%;
-  /* Background image cover all screen height */
-  height: 100%;
-  /* ensure image cover entair container without being distorted  */
-  object-fit: cover;
-  /* prevent unwanted inline bahavior of image */
-  display: block;
-}
 
 .dropbtn {
   text-decoration: none;
