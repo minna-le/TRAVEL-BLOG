@@ -61,6 +61,8 @@
   flex-direction: column;
   max-width: 1500px;
   justify-content: flex-start;
+  margin: 0 auto;
+  /* Center the section in the middle of the page */
 }
 .myStory-section {
   display: flex;
@@ -69,8 +71,6 @@
   background-color: white;
   padding: 20px 48px;
   gap: 70px;
-
-  margin: 0 auto; /* Center the section in the middle of the page */
 }
 
 .left-corner {
@@ -96,7 +96,6 @@
 }
 .secondrow-images {
   display: flex;
-
   justify-content: space-between;
   gap: 10px;
 }
@@ -126,18 +125,19 @@
 .blogs-header-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 .blogs-header-container h1,
 p {
   margin: 10px;
 }
-.blogs-header-container h1 {
-  padding: 0;
-}
+
 .blogs-carousel {
   display: flex;
   justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .left-button,
@@ -150,37 +150,34 @@ p {
   padding: 0;
   margin: 0;
 }
-.carousel-buttons {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 10px;
-}
+
 .arrow-icon {
   width: 100%;
 }
 
 .banner-image {
-  width: 225px;
-  height: 155px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
-.cards-container {
+
+.blog-post-container {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-
   overflow: hidden;
 }
-.cards-container a {
-  /* center text in a block.inline element */
-  text-align: center;
+
+.blog-post-container a {
   text-decoration: none;
 }
-.cards-container a:visited {
+
+.blog-post-container a:visited {
   color: black; /* This ensures the visited links aren't purple */
 }
 
-.card-title {
-  margin: 10px;
+.blog-post-title {
+  text-align: left;
 }
 .view-all-button {
   font-family: var(--paragraph-sans);
