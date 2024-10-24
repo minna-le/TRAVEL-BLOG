@@ -5,23 +5,25 @@
 }
 .overlay-text {
   position: absolute;
-  color: rgb(234, 234, 233);
-  top: 35%;
-  left: 5%;
+  bottom: 64px;
+  color: white;
+  opacity: 0.75;
+
+  padding-left: 64px;
   font-family: var(--paragraph-sans);
-  font-weight: lighter;
-  text-align: left;
 }
 .overlay-text p {
   font-size: 140px;
   margin-bottom: 50px;
+  margin-top: 0px;
 }
 
 .lets-go-button {
   cursor: pointer;
   border: 1px solid var(--overlaid-text-color);
   background-color: transparent;
-  color: var(--overlaid-text-color);
+  color: white;
+  opacity: 0.75;
   font-family: var(--heading-sans);
   font-size: 14px;
   letter-spacing: 1px;
@@ -29,6 +31,7 @@
   font-weight: lighter;
   padding: 10px 20px;
   align-items: center;
+  text-decoration: none;
 }
 .lets-go-button:hover .arrow-icon {
   /* element moves horizontally 5px along X-axis */
@@ -43,7 +46,7 @@
   margin-left: 5px;
 }
 .background-image {
-  width: 100%;
+  width: auto;
   height: 100%;
   overflow: hidden;
 }
