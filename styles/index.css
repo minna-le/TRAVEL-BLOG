@@ -155,10 +155,13 @@ p {
   width: 100%;
 }
 
+.blog-post {
+  width: 25.5%;
+}
 .banner-image {
   width: 100%;
-  height: 150px;
   object-fit: cover;
+  aspect-ratio: 3 / 2;
 }
 
 .blog-post-container {
