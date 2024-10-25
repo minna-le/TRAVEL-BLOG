@@ -3,13 +3,17 @@
   height: 100vh;
   position: relative;
 }
+.overlay-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
 .overlay-text {
   position: absolute;
   bottom: 64px;
+  left: 64px;
   color: white;
   opacity: 0.75;
-
-  padding-left: 64px;
   font-family: var(--paragraph-sans);
 }
 .overlay-text p {
