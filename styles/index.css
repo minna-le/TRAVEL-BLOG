@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 20px 48px;
+  /* padding: 20px 48px; */
   gap: 70px;
   max-width: 1500px;
   margin: 0 auto; /* Center the section in the middle of the page */
@@ -28,7 +28,8 @@
 
 .myStory-wrapper {
   background-color: white;
-  padding: 40px;
+  /* padding: 40px; */
+  margin-top: 32px;
 }
 .secondrow-images {
   display: flex;
