@@ -135,7 +135,7 @@ body {
   color: white;
   height: 100%;
   font-family: var(--heading-sans);
-  font-weight: 600;
+
   border: none;
 }
 .search-box-wrapper {
