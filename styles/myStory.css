@@ -2,16 +2,10 @@
   width: 100%;
   height: 100vh;
   position: relative;
+  background-image: url("/images/image8.jpg");
+  background-size: cover;
 }
-.overlay-content {
-  max-width: 1500px;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  height: 90%;
-}
+
 .overlay-text {
   position: absolute;
   color: white;
@@ -42,28 +36,13 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.background-image {
-  height: 100%;
-  overflow: hidden;
-  z-index: 100;
-}
-.background-image img {
-  /* Background image cover all screen height */
-  height: 100%;
-  /* ensure image cover entair container without being distorted  */
-  object-fit: cover;
-  /* prevent unwanted inline bahavior of image */
-  display: block;
-}
 
 .myStory-content-wrapper {
-  padding: 40px;
   background-color: white;
 }
 .myStory-inner-content {
-  padding: 20px 68px;
+  padding: 40px 20vw;
   margin: 0 auto;
-  max-width: 1020px;
   font-family: var(--paragraph-sans);
   letter-spacing: 1px;
 }
@@ -73,7 +52,7 @@
 .quote-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   margin-top: 60px;
   margin-bottom: 60px;
 }
