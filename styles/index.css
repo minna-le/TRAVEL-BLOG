@@ -174,13 +174,12 @@
 
 .blog-post-container a:visited {
   color: black;
-} /* This ensures the visited links aren't purple */
+}
 
 .blog-post-header {
-  font-weight: 700 !important;
+  font-weight: 700;
 }
 .blog-post-caption {
-  text-align: left;
   opacity: 0.5;
   font-size: 14px;
 }
