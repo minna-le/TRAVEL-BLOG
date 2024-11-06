@@ -1,0 +1,29 @@
+main {
+  padding: 140px 20vw;
+  margin: 0 auto;
+  font-family: var(--paragraph-sans);
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.blog-card {
+  margin-top: 50px;
+  display: flex;
+}
+.blog-card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+.blog-title {
+  text-transform: uppercase;
+}
