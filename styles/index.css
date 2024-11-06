@@ -10,15 +10,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  height: 90%;
+  padding: 60px 48px 48px 48px;
+  height: 100%;
+  justify-content: flex-end;
 }
 .overlay-text {
-  position: absolute;
-  bottom: 64px;
   color: white;
   opacity: 0.75;
   font-family: var(--paragraph-sans);
+  margin-bottom: 64px;
 }
 
 .overlay-text p {
@@ -75,9 +75,8 @@
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 20px 48px;
+  padding: 48px 48px;
   gap: 70px;
-  max-width: 1500px;
   margin: 0 auto; /* Center the section in the middle of the page */
 }
 
@@ -99,8 +98,9 @@
 }
 
 .myStory-wrapper {
+  max-width: 1500px;
   background-color: white;
-  padding: 40px;
+  margin: 0 auto;
 }
 .secondrow-images {
   display: flex;
