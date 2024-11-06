@@ -3,19 +3,11 @@
   height: 100vh;
   position: relative;
 }
-.overlay-content {
-  max-width: 1500px;
-  margin: 0 auto;
-  /* ref point for overlay-text absolutely positioned child */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  height: 90%;
-}
+
 .overlay-text {
   position: absolute;
-  bottom: 64px;
+  bottom: 128px;
+  left: calc((100vw - 1500px) / 2);
   color: white;
   opacity: 0.75;
   font-family: var(--paragraph-sans);
