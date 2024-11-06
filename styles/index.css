@@ -7,10 +7,13 @@
 .overlay-text {
   position: absolute;
   bottom: 128px;
-  left: calc((100vw - 1500px) / 2);
+  left: 48px;
   color: white;
   opacity: 0.75;
   font-family: var(--paragraph-sans);
+  @media (min-width: 1596px) {
+    left: calc((100vw - 1500px) / 2);
+  }
 }
 
 .overlay-text p {
