@@ -32,16 +32,16 @@
 
 .myStory-content-wrapper {
   background-color: white;
-  max-width: 1500px;
 }
 .myStory-inner-content {
+  max-width: 1500px;
+  margin: 0 auto;
   padding: 40px 20vw;
-
   font-family: var(--paragraph-sans);
   letter-spacing: 1px;
 }
 .myStory-inner-content p {
-  line-height: 2.2em;
+  line-height: 2em;
 }
 .quote-container {
   display: flex;
