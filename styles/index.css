@@ -1,27 +1,38 @@
 .overlay-container {
-  width: 100%;
   height: 100vh;
-  position: relative;
+  width: 100%;
+  background-image: url("/images/img2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.overlay-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 48px 48px 48px;
+  height: 100%;
+  justify-content: flex-end;
 }
 .overlay-text {
-  position: absolute;
-  color: rgb(234, 234, 233);
-  top: 35%;
-  left: 5%;
+  margin-bottom: 64px;
+  color: white;
+  opacity: 0.75;
   font-family: var(--paragraph-sans);
-  font-weight: lighter;
-  text-align: left;
 }
+
 .overlay-text p {
   font-size: 140px;
   margin-bottom: 50px;
+  margin-top: 0px;
 }
 
 .lets-go-button {
   cursor: pointer;
   border: 1px solid var(--overlaid-text-color);
   background-color: transparent;
-  color: var(--overlaid-text-color);
+  color: white;
+  opacity: 0.75;
   font-family: var(--heading-sans);
   font-size: 14px;
   letter-spacing: 1px;
@@ -29,6 +40,7 @@
   font-weight: lighter;
   padding: 10px 20px;
   align-items: center;
+  text-decoration: none;
 }
 .lets-go-button:hover .arrow-icon {
   /* element moves horizontally 5px along X-axis */
@@ -42,28 +54,9 @@
   fill: var(--overlaid-text-color);
   margin-left: 5px;
 }
-.background-image {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.background-image img {
-  width: 100%;
-  /* Background image cover all screen height */
-  height: 100%;
-  /* ensure image cover entair container without being distorted  */
-  object-fit: cover;
-  /* prevent unwanted inline bahavior of image */
-  display: block;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 1500px;
-  justify-content: flex-start;
-  margin: 0 auto;
-  /* Center the section in the middle of the page */
-}
+
+
+
 .myStory-section {
   display: flex;
   justify-content: space-between;
