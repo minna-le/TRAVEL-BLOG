@@ -49,11 +49,13 @@
   transition: transform 0.3s;
 }
 
-.arrow-icon {
-  width: 10px;
+.button-arrow-icon {
+  width: 15px;
   fill: var(--overlaid-text-color);
   margin-left: 5px;
 }
+
+
 
 .myStory-section {
   display: flex;
@@ -62,8 +64,6 @@
   background-color: white;
   padding: 20px 48px;
   gap: 70px;
-  max-width: 1500px;
-  margin: 0 auto; /* Center the section in the middle of the page */
 }
 
 .left-corner {
@@ -89,7 +89,6 @@
 }
 .secondrow-images {
   display: flex;
-
   justify-content: space-between;
   gap: 10px;
 }
@@ -103,9 +102,90 @@
 .left-corner,
 .readmore-button {
   font-family: var(--paragraph-sans);
-  font-weight: 400; /* Open Sans 400 for regular paragraphs */
 }
 .left-corner h1 {
-  font-family: var(--heading-sans);
-  font-weight: 600;
+  font-family: var(--paragraph-sans);
+}
+.left-corner p {
+  margin-left: 0;
+}
+.blogs-section-container {
+  padding: 30px 88px;
+  font-family: var(--paragraph-sans);
+}
+.blogs-header-container {
+  display: flex;
+  flex-direction: column;
+}
+.blogs-header-container h1,
+.blogs-header-container p {
+  margin: 10px;
+  text-align: center;
+}
+
+.blogs-carousel {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.left-button,
+.right-button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.arrow-icon {
+  width: 100%;
+}
+
+.blog-post {
+  width: 20%;
+}
+.banner-image {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+}
+
+.blog-post-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.blog-post-container a {
+  text-decoration: none;
+}
+
+.blog-post-container a:visited {
+  color: black;
+}
+
+.blog-post-header {
+  font-weight: 700;
+}
+.blog-post-caption {
+  opacity: 0.5;
+  font-size: 14px;
+}
+.view-all-button {
+  font-family: var(--paragraph-sans);
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+.view-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }

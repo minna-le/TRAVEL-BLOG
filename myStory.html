@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Open+Sans:wght@400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles/myStory.css" />
     <link rel="stylesheet" href="styles/global.css" />
   </head>
@@ -16,13 +20,13 @@
       <div class="headerNav">
         <div class="logo">
           <a href="index.html">
-            <h1>Happy Hearts Roaming</h1>
-            <p>Family bonds. Across borders</p>
+            <div class="logo-h1">Happy Hearts Roaming</div>
+            <div class="logo-p">Family bonds. Across borders</div>
           </a>
         </div>
         <div class="navbar">
-          <a href="myStory.html">MY STORY</a>
-          <a href="#blogs">BLOGS</a>
+          <div class="mystory-header"><a href="myStory.html">MY STORY</a></div>
+          <div class="blogs-header"><a href="#blogs">BLOGS</a></div>
           <div class="dropdown">
             <button class="dropbtn">
               DESTINATIONS <i class="fa fa-caret-down"></i>
@@ -31,6 +35,23 @@
               <a href="#usa">USA</a>
               <a href="#europe">Europe</a>
               <a href="#asia">Asia</a>
+            </div>
+          </div>
+          <div class="search-container">
+            <div class="search-box-wrapper">
+              <!-- form submit, data sent, handle request, page redirect/result display -->
+              <form action="/action_page.php">
+                <!-- need JS to clear input after searching? -->
+                <input
+                  class="search-box"
+                  type="text"
+                  placeholder="Type something"
+                  autocomplete="off"
+                />
+                <button class="search-btn" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
