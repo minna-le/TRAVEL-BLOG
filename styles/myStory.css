@@ -1,0 +1,59 @@
+.overlay-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url("/images/image8.jpg");
+  background-size: cover;
+  background-color: #f0f0f0;
+}
+
+.overlay-text {
+  position: absolute;
+  color: white;
+  font-family: var(--paragraph-sans);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-text p {
+  margin-bottom: 50px;
+  margin: 0px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.text-header {
+  font-size: 68px;
+}
+.text-description {
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.myStory-content-wrapper {
+  background-color: white;
+}
+.myStory-inner-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 40px 20vw;
+  font-family: var(--paragraph-sans);
+  letter-spacing: 1px;
+}
+.myStory-inner-content p {
+  line-height: 2em;
+}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.quote-container h2,
+.quote-container p {
+  text-align: center;
+}
+.quote-container p {
+  font-weight: 700;
+}
