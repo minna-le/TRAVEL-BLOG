@@ -1,5 +1,6 @@
 html,
 body {
+  letter-spacing: 1.15px;
   /* prevent horizontal scroll */
   overflow-x: hidden;
   margin: 0;
